@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.chat-container {
+  scrollbar-width: thin;
+  scrollbar-color: #475569 #0f172a;
+}
+
+.message-bubble {
+  max-width: 80%;
+  padding: 14px 18px;
+  border-radius: 18px;
+  line-height: 1.5;
+}
+
+.user-bubble {
+  background: #0ea5e9;
+  color: white;
+  border-bottom-right-radius: 6px;
+}
+
+.assistant-bubble {
+  background: #1e2937;
+  color: #f1f5f9;
+  border-bottom-left-radius: 6px;
+}
