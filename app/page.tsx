@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef, useEffect } from 'react';
-import { Mic, MicOff, Send, Phone, ArrowLeft } from 'lucide-react';
+import { Mic, MicOff, Send, Phone } from 'lucide-react';
 
 interface Message {
   role: 'user' | 'assistant';
@@ -94,7 +94,6 @@ export default function OrionChat() {
       <div className="bg-[#111827] border-b border-slate-800 px-6 py-4 flex items-center justify-between sticky top-0 z-50">
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-3">
-            {/* Logo Placeholder - Replace with your real logo */}
             <div className="w-10 h-10 bg-sky-500 rounded-2xl flex items-center justify-center">
               <span className="text-[#0B0F1A] font-bold text-2xl">O</span>
             </div>
