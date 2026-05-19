@@ -6,29 +6,55 @@ body {
   font-family: var(--font-inter);
 }
 
+/* Custom Scrollbar */
 .chat-container {
   scrollbar-width: thin;
   scrollbar-color: #475569 #0f172a;
 }
 
+.chat-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chat-container::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+
+.chat-container::-webkit-scrollbar-thumb {
+  background-color: #475569;
+  border-radius: 20px;
+}
+
+.chat-container::-webkit-scrollbar-thumb:hover {
+  background-color: #64748b;
+}
+
+/* Message Bubbles */
 .message-bubble {
   max-width: 82%;
   padding: 15px 18px;
-  border-radius: 18px;
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.55;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 
 .user-bubble {
   background: linear-gradient(135deg, #0ea5e9, #0284c8);
   color: white;
-  border-bottom-right-radius: 6px;
-  box-shadow: 0 4px 12px rgba(14, 165, 233, 0.3);
+  border-bottom-right-radius: 8px;
 }
 
 .assistant-bubble {
   background: #1e2937;
   color: #f1f5f9;
-  border-bottom-left-radius: 6px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 8px;
+}
+
+/* Input Area Polish */
+input::placeholder {
+  color: #64748b;
+}
+
+input:focus {
+  box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.1);
 }
